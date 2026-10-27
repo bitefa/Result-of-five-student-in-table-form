@@ -34,7 +34,7 @@ int main() {
             total[i] += marks[i][j];
         }
 
-        avg[i] = total[i] / 3.0f;
+        avg[i] = total[i] / 3.0;
 
         if (total[i] > total[top]) {
             top = i;

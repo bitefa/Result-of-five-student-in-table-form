@@ -12,8 +12,6 @@ int main() {
     float avg[5];
 
     int top = 0;
-
-    // Read student names and marks
     for (int i = 0; i < 5; i++) {
         cout << "\nEnter student " << i + 1 << " name: ";
         cin.getline(names[i], 20);
@@ -25,8 +23,6 @@ int main() {
         
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
-
-    // Calculate total and average
     for (int i = 0; i < 5; i++) {
         total[i] = 0;
 
@@ -60,8 +56,6 @@ int main() {
              << fixed << setprecision(1)
              << avg[i] << endl;
     }
-
-    // Display the top student
     cout << "\nTop student: " << names[top] << " (Total: " << total[top] << ")" << endl;
 
     return 0;
